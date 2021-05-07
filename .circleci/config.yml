@@ -2,19 +2,19 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:16.1.0
+      - image: circleci/node:8.9
     steps:
       - checkout
       - run: echo "npm installing"
       - run: npm install
-      - run: npm run build
   test:
     docker:
-      - image: circleci/node:16.1.0
+      - image: circleci/node:8.9
     steps:
       - checkout
       - run: echo "testing the components"
       - run: npm install
+      - run: npm audit fix
       - run: npm install --only=dev
       - run: npm test
 workflows:
