@@ -1,4 +1,4 @@
-# Todo-list
+# Todo-list [![build-status](https://circleci.com/gh/abdallah-mahdy/Todo-list.svg?style=svg)](https://app.circleci.com/pipelines/github/abdallah-mahdy/Todo-list)
 
 ## Description
 
